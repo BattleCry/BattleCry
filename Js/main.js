@@ -46,6 +46,7 @@ $(function () {
   $('#armory').toggle(); 
   $('#attack-storage').toggle(); 
   $('#makePlayer').toggle();
+
   function handleMouseMove(event) {
     event = event || window.event; // IE-ism
     mousePos = {
@@ -63,19 +64,18 @@ $(function () {
   }
   window.onmousemove = handleMouseMove;
 });
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-(function() {
-  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/platform.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-
+// (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
+// (function() {
+//   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+//   po.src = 'https://apis.google.com/js/platform.js';
+//   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+// })();
 var currentSelectedPlayer = '';
 var pasx, pasy, changex, changey = 0;
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
@@ -125,6 +125,9 @@ var game = {
 
   session           : {},
   characters        : [],
+
+  currentHealth     : 0,
+  currentEssence    : 0,
 
   currentPage       : '#play',
   currentLinkAr     : ['nothing', '#link1', '#link2', '#link3', '#link4'],
@@ -229,6 +232,21 @@ var game = {
     mesh.position.y = 10;
     mesh1.position.y = 15;
     game.makeWarScene();
+    var id = parseInt(currentSelectedPlayer.substring(7, 8));
+    game.currentHealth = game.characters[id].health;
+    game.currentEssence = game.characters[id].essence;
+    game.regernateEssence();
+  },
+
+  regernateEssence : function() {
+    var id = parseInt(currentSelectedPlayer.substring(7, 8));
+    setTimeout(function() {
+      if (!game.war) return;
+      game.regernateEssence();
+      if (game.currentEssence + 1 <= game.characters[id].essence) {
+        game.renderHealth('essence', -1);
+      }
+    }, 1000)
   },
 
   makePlayer : function() {
@@ -278,6 +296,21 @@ var game = {
     $('#totalCredits').html(game.credits);
   },
 
+  renderHealth : function(choose, lose) {
+    if (choose == "health") {
+      var id = parseInt(currentSelectedPlayer.substring(7, 8));
+      $('#health').css({ 'height': (game.characters[id].health/100)*(game.currentHealth-lose)+'%' });
+      game.currentHealth-=lose;
+    }
+    if (choose == "essence") {
+      var id = parseInt(currentSelectedPlayer.substring(7, 8));
+      $('#essence').css({ 'height': (game.characters[id].essence/100)*((game.currentEssence-lose))+'%' });
+      game.currentEssence-=lose;
+    }
+    // $('').css({});
+    // $('').css({});
+  },
+
   setUpCamera : function() {
     //$(renderer.domElement).css('border', '1px solid red');
     camera.position.set(0, 100, 500);
@@ -294,7 +327,7 @@ var game = {
 
   moveArmory : function() {
     if (game.armoryLetgo == false) {
-      $('#armory').css({ 'left':mousePos.x+'px', 'top':mousePos.y+'px' });
+      $('#armory').css({ 'left':mousePos.x+'px', 'top':mousePos.y+'px' });    
     }
   },
 
@@ -356,7 +389,7 @@ var game = {
 
   makeWarScene : function() {
     loader.options.convertUpAxis = true;
-    loader.load("../Battle Cry/daes/Strong.dae", function ( collada ) {
+    loader.load("daes/Strong.dae", function ( collada ) {
       dae = collada.scene;
       skin = collada.skins[ 0 ];
 
@@ -506,6 +539,9 @@ var game = {
       }
       if (e.keyCode == 13) {
         w2popup.close();
+      }
+      if (e.keyCode == 49) {
+        game.renderHealth('essence', 10);
       }
     }
   },
@@ -843,7 +879,7 @@ var game = {
           characterId     : characterID,
           level           : 1,
           health          : 1000,
-          stamina         : 100,
+          essence         : 100,
           characterCode   : game.characterCode,
           posx            : null,
           posy            : null,
@@ -902,29 +938,8 @@ var game = {
     console.log(localStorage.remember, localStorage.password, localStorage.username);
   },
 
-  moveArmorySlider : function(e, tf) {
-    editing = '#armory-slider-' + e;
-    $( editing ).on('mouseup', stop);
-    function stop() {
-      tf = 'false';
-    }
-    if (tf == 'true') {
-      $(editing).css({ 'left':mousePos.x+'px' });
-      console.log(editing, mousePos.x);
-      setTimeout(function() {
-        game.moveArmorySlider(e, 'true');
-      }, 1)  
-      return;
-    }
-    $( editing ).mousedown(function() {
-      $(editing).css({ 'right':mousePos.x+'px' });
-      console.log(editing, mousePos.x);
-      setTimeout(function() {
-        game.moveArmorySlider(e, 'true');
-      }, 1)  
-    });
-  },
 };
+
 
 
 
