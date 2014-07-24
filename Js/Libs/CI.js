@@ -10,16 +10,23 @@ var _ci_ = { // main activater i.e in jquery it is $ same here _ci_
 	},
 };
 var js3 = {
-	positionOnAxis : function(f, amt, rot ) { // when this is used instead of position it will position itself corrisponding to the native axis
+	positionOnAxis : function(freq, rot ) { // when this is used instead of position it will position itself corrisponding to the native axis
 		var ratio = 2 * Math.PI / rot; //rotation deg
-		var deg = 90 / (ratio/4);
-		var sin = Math.sin(deg); // a
-		var a = sin * amt;
-		// var ac = (amt*amt) - (a*a); // b
-		// var b = Math.sqrt(ac); 
-		var cos = Math.cos(deg);
-		var b = cos * amt;
+		var rotDeg = 90 / (ratio/4);
+		var rotRad;
+
+		if (freq) {
+			rotRad = rotDeg;
+		} else {
+			rotRad = 360 - (rotDeg - 180);
+		}
+
+		rotRad *= Math.PI/180;
+
+		var a = Math.cos(rotRad) * 10;
+		var b = Math.sin(rotRad) * 10;
 		console.log('a', a, 'b', b);
+
 		mesh.position.x += b; // execution
 		mesh.position.z += a;
 		mesh1.position.x += b;
