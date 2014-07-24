@@ -1,0 +1,11 @@
+-database							v0.02
+-set up sword progression			v0.03
+-rescale ability					v0.03
+-loading imgs and paper maps		v0.1
+-fleshed out player movements		v0.5
+-node.js							v0.5
+-add attacks and weapons			v0.51
+-maps								v0.52
+-customization of character			v0.53
+-blacksmith							v0.54
+-remake main page					v0.7

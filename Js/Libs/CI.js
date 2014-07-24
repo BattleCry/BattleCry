@@ -39,9 +39,13 @@ var js3 = {
 		} 
 	},
 
+	navigateAttack : function(curLocX, curLocZ, DestLocX, DestLocZ) {
+
+	}
+
 	makeJSONshape : function(varname, scale, x, y, z) {
 		var a = 0;
-		var name = varname; 
+		var name = varname;
 		var points = [];
 		for (var i = 0; i<armAnimation.vertices.length/3; i++) {
 			console.log('here');
