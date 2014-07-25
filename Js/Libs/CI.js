@@ -41,7 +41,7 @@ var js3 = {
 
 	navigateAttack : function(curLocX, curLocZ, DestLocX, DestLocZ) {
 
-	}
+	},
 
 	makeJSONshape : function(varname, scale, x, y, z) {
 		var a = 0;

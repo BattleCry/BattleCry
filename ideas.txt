@@ -6,6 +6,8 @@
 -node.js							v0.5
 -add attacks and weapons			v0.51
 -maps								v0.52
+-blacksmith							v0.52
 -customization of character			v0.53
--blacksmith							v0.54
+-add huntsman animals				v0.54
+-addhorses for people to ride on	vo.55
 -remake main page					v0.7
