@@ -1,0 +1,141 @@
+<html>
+<head>
+	<!-- libraries -->
+	<script src="../../BattleCry/Js/Libs/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/w2ui-1.4/w2ui-1.4.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/ThreeMin.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/Detector.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/CI.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../BattleCry/Js/Libs/w2ui-1.4/w2ui-1.4.css" />
+	<link rel="stylesheet" type"text/css" href="../Css/main.css"/>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="../Js/explore/main.js"></script>
+	<script type="text/javascript" src="../Js/Global/global.js"></script>
+</head>
+<body>
+
+<div class="top-bar">
+	<a href="../Explore/index.html">
+		<div class="block" style="width: 60px; height: 60px; background-color: #000000; border-radius: 14px; top: 7px; left: 100px">
+			<img src="../img/Shapez-icon.png" width="50px" height="50px" class="block" style="left: 5px; top: 5px">
+		</div>
+		<div class="block" style="font-size: 30px; left: 175px; color: #282828; top: 20px; -webkit-user-select: none">
+			<b>SHAPEZ</b>
+		</div>
+	</a>
+	<div class="block" style="height: 80px; width: 1px; left: 350px; background-color: #E3E3E3"></div>
+
+	<div class="search-holder">
+		<div class="search-options" style="" >
+			<div class="block" style="top: 8px; left: 10px; -webkit-user-select: none">All Collections</div>
+			<img src="../img/Down-arrow-icon.png" width="14px" height="14px" class="block" style="top: 11px; right: 13px; cursor: pointer" onclick="explore.allCollections()">
+		</div>
+
+		<div id="collections" class="block" style="left: 150px; top: 70px; width: 100px">
+			<div class="collections">
+				<div class="block" style="top: 7px; left: 10px">
+					Human 
+				</div>
+				<img src="../img/Human-icon.png" class="block" height="25px" width="25px" style="top: 3px; right: 10px">
+			</div>
+			<div class="collections" style="top: 32px">
+				<div class="block" style="top: 7px; left: 10px">
+					Animal
+				</div>
+				<img src="../img/Animal-icon.png" class="block" height="25px" width="25px" style="top: 3px; right: 10px">
+			</div>
+			<div class="collections" style="top: 64px">
+				<div class="block" style="top: 7px; left: 10px">
+					Plant
+				</div>
+				<img src="../img/Plant-icon.png" class="block" height="26px" width="26px" style="top: 2px; right: 10px">
+			</div>
+		</div>
+
+		<input class="search-input" placeholder="Search....">
+
+		<div class="search-button">
+			<img src="../img/Search-icon.png" width="22px" height="22px" class="block" style="left: 5px; top: 5px">
+		</div>
+
+	</div>
+
+	<div class="block" style="height: 80px; width: 1px; right: 400px; background-color: #E3E3E3"></div>
+
+	<div id="sign-in" class="block" style="right: 210px; width: 170px; top: 20px; height: 40px; text-align: center; color: #79797A;">
+		<div class="block" style="left: 10px; top: 10px; cursor: pointer; -webkit-user-select: none" onclick="explore.signInToggle()">Login</div>
+		<a href="signin.html"><div class="block" style="color: #FFFFFF; right: 10px; top: 5px; padding-left: 15px; padding-right: 15px; padding-top: 6px; padding-bottom: 6px; border-radius: 6px; background-color: #1AC6B2; cursor: pointer; -webkit-user-select: none">Join Us</div></a>
+	</div>
+
+	<div class="block" style="height: 80px; width: 1px; right: 200px; background-color: #E3E3E3"></div>
+
+	<div id="cart" class="block" style="width: 100px; right: 100px; bottom: 0px; top: 0px">
+		<img src="../img/Cart-icon.png" width="40px" height="40px" class="block" style="bottom: 10px; left: 10px">
+		<div class="block" style="font-size: 12px; color: #A0A0A0; top: 14px; left: 6px; -webkit-user-select: none">
+			Your Cart
+		</div>
+		<div class="block" style="width: 25px; height: 10px; right: 10px; bottom: 25px">
+			<img src="../img/Down-arrow-icon.png" width="10px" height="10px" class="block" style="right: 4px; top: 4px">
+			<div id="amount-in-cart" class="block" style="left:0px; -webkit-user-select: none">0</div>
+		</div>
+	</div>
+
+	<div class="block" style="height: 80px; width: 1px; right: 100px; background-color: #E3E3E3"></div>
+
+</div>
+
+<div class="social-bar">
+	<div class="block" style="height: 38px; width: 1px; left: 100px; top: 1px; background-color: #BEBEBE"></div>
+	<div class="block" style="left: 114px; top: 5px; cursor: pointer; color: black; -webkit-user-select: none">
+		Explore
+	</div>
+	<div class="block" style="height: 38px; width: 1px; left: 178px; top: 1px; background-color: #BEBEBE"></div>
+	<div class="block" style="left: 190px; top: 5px; cursor: pointer; color: #747474; -webkit-user-select: none">
+		My Creations
+	</div>
+	<div class="block" style="height: 38px; width: 1px; left: 290px; top: 1px; background-color: #BEBEBE"></div>
+	<a href="editor.html">
+		<div class="block" style="left: 300px; top: 5px; cursor: pointer; color: #747474; -webkit-user-select: none">
+			Create
+		</div>
+	</a>
+	<div class="block" style="height: 38px; width: 1px; left: 350px; top: 1px; background-color: #BEBEBE"></div>
+</div>
+
+<div class="main">
+	<div class="note-card-holder" style="left: 100px; top: 50px">
+		<div id="canvas-1">
+
+		</div>
+		<div class="note-card" style="">
+
+		</div>
+		<div class="note-card-top" style="">
+
+		</div>
+		<div class="note-card-edge" style="">
+
+		</div>
+		<div class="note-card-edge-border" style="">
+
+		</div>
+		<div class="price-tag" style="">
+			<img src="../img/price-tag-icon.png" width="43px" height="24px">
+			<div class="block" style="left: 17px; font-size: 11px; top: 5px; color: #8E8E8E">
+				$20
+			</dv>
+		</div>
+		<div class="calender" style="">
+			<img src="../img/Calender-icon.jpg" width="21px" height="22px">
+			<div class="block" style="left: 5px; font-size: 11px; top: 8px; color: #8E8E8E">
+				17
+			</dv>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+.input {
+	margin-left: 10px;
+	width: 150px;
+	border: none !important;
+	-moz-box-shadow: 0 0 3px #000 !important;
+	-webkit-box-shadow: 0 0 3px #000 !important;
+	box-shadow: 0 0 3px #000 !important;	
+	height: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.top-bar {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+	background-color: #F7F7F7;
+}
+
+.social-bar {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	height: 40px;
+	top: 80px;
+	background-color: #DBDBDB;
+	background-image: -webkit-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -moz-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -ms-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -o-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#C5C3BF', GradientType=0);
+}
+
+.main {
+	background-color: #F4F4F4;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	top: 110px;
+}
+
+.search-holder {
+	position: absolute;
+	right: 250px;
+	top: 0px;
+	bottom: 0px;
+	left: 250px;
+}
+
+.search-options {
+	position: absolute;
+	height: 32px; 
+	width: 140px; 
+	top: 50%; 
+	margin-top: -15px; 
+	background-color: blue; 
+	border-top-left-radius: 6px; 
+	border-bottom-left-radius: 6px;
+	left: 150px;
+	font-size: 16px;
+	background-color: #FDFDFD;
+	color: #79797A;
+	text-align: center;
+	-webkit-box-shadow: inset 0px 0px 3px 0px rgba(196, 196, 196, 0.73);
+	-moz-box-shadow:    inset 0px 0px 3px 0px rgba(196, 196, 196, 0.73);
+	box-shadow:         inset 0px 0px 3px 0px rgba(196, 196, 196, 0.73);
+	background-image: -webkit-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+	background-image: -moz-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+	background-image: -ms-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+	background-image: -o-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#FDFDFD', endColorstr='#E4E4E4', GradientType=0);
+	z-index: 1;
+}
+
+.search-input {
+	height: 31px;
+	width: 260px;
+	position: absolute;
+	top: 50%; 
+	margin-top: -14px;
+	z-index: 0;
+	left: 289px;
+	border-radius: 0px !important;
+	font-size: 18px;
+}
+
+.search-button {
+	border-radius: 1000px;
+	position: absolute;
+	height: 33px;
+	width: 33px;
+	background-color: #FCFCFC;
+	border: 1px solid #CCCCCC;
+	top: 50%;
+	margin-top: -16px;
+	left: 532px;
+	z-index: 0px;
+	background-image: -webkit-linear-gradient(top, #FCFCFC 0%, #E1E1E1 100%);
+	background-image: -moz-linear-gradient(top, #FCFCFC 0%, #E1E1E1 100%);
+	background-image: -ms-linear-gradient(top, #FCFCFC 0%, #E1E1E1 100%);
+	background-image: -o-linear-gradient(top, #FCFCFC 0%, #E1E1E1 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#E1E1E1', GradientType=0);
+}
+
+.search-button:hover {
+	background-image: -webkit-linear-gradient(top, #F3F3F3 0%, #D4D4D4 100%);
+	background-image: -moz-linear-gradient(top, #F3F3F3 0%, #D4D4D4 100%);
+	background-image: -ms-linear-gradient(top, #F3F3F3 0%, #D4D4D4 100%);
+	background-image: -o-linear-gradient(top, #F3F3F3 0%, #D4D4D4 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#F3F3F3', endColorstr='#D4D4D4', GradientType=0);
+	cursor: pointer;
+}
+
+.sign-in-input {
+	height: 25px;
+	width: 100px;
+	position: absolute;
+	border-radius: 3px;
+	left: -10px;
+}
+.block {
+	position: absolute;
+}
+
+.top-bar {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	height: 80px;
+	background-color: #F7F7F7;
+}
+
+.social-bar {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	height: 40px;
+	top: 80px;
+	background-color: #DBDBDB;
+	background-image: -webkit-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -moz-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -ms-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -o-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#C5C3BF', GradientType=0);
+}
+

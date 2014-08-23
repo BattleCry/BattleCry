@@ -1,0 +1,47 @@
+body {
+	background-color: #FEFDFD;
+	padding: 0px;
+}
+
+.body {
+	position: absolute;
+	top: 240px;
+	right: 100px;
+	left: 100px;
+	height: 1000px;
+}
+
+.block {
+	position: absolute;
+}
+
+.top-bar {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px; 
+	height: 140px;
+	background-color: #F4F4F4;
+}
+
+.bubble {
+	position: absolute;
+	background-color: #FEFDFD;
+	border: 4px solid #E4E4E4;
+	border-radius: 10px;
+}
+
+.social-bar {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	height: 30px;
+	top: 140px;
+	background-color: #DBDBDB;
+	background-image: -webkit-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -moz-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -ms-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	background-image: -o-linear-gradient(top, #DBDBDB 0%, #C5C3BF 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#DBDBDB', endColorstr='#C5C3BF', GradientType=0);
+}
+

@@ -1,0 +1,270 @@
+<html>
+<head>
+	<!-- libraries -->
+	<script src="../../BattleCry/Js/Libs/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/w2ui-1.4/w2ui-1.4.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/ThreeMin.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/Detector.js"></script>
+	<script type="text/javascript" src="../../BattleCry/Js/Libs/CI.js"></script>
+	<script src="../../BattleCry/Js/Libs/ColladaLoader.js"></script>
+	<script src="../../BattleCry/Js/Libs/JSONLoader.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../BattleCry/Js/Libs/w2ui-1.4/w2ui-1.4.css" />
+	<link rel="stylesheet" type"text/css" href="../Css/editor.css"/>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="../Js/editor/config.js"></script>
+	<script type="text/javascript" src="../Js/editor/meshChart.js"></script>
+	<script type="text/javascript" src="../Js/editor/hover.js"></script>
+	<script type="text/javascript" src="../Js/editor/main.js"></script>
+	<script type="text/javascript" src="../Js/editor/classes.js"></script>
+	<script type="text/javascript" src="../Js/editor/animation.js"></script>
+	<script type="text/javascript" src="../Js/Global/global.js"></script>
+	<script type="text/javascript" src="../Js/editor/save.js"></script>
+</head>
+<body>
+
+<div id="menu-bar" class="menu-bar" style="z-index: 4">
+	<div class="options" style="top: -8px; left: -12px"> 
+		<a href="explore.html">
+			<div class="block" style="width: 39px; height: 39px; border-radius: 10px; background-color: black">
+				<img src="../img/Shapez-icon.png" width="35px" height="35px" class="block" style="top: 2px; right: 2px">
+			</div>
+		</a>
+	</div>
+
+	<div class="options" id="file-option" style="left: 60px; top: 0px"> 
+		File
+	</div>
+
+	<div class="slide-down" id="file-slide-down" style="left: 62px">
+		<div class="slide-down-option" onclick="save.save();">
+			<img src="../img/System-Save-icon.png" class="block" height="20px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 5px">Save </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 28px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option">
+			<img src="../img/Open-icon.png" class="block" height="25px" width="22px" style="left: 4px; margin-top: -3px">
+			<div class="block" style="left: 34px; top: 34px">Open </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 57px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option">
+			<img src="../img/Export-icon.png" class="block" height="20px" width="20px" style="left: 6px">
+			<div class="block" style="left: 34px; top: 63px">Export </div>
+		</div>
+	</div>
+
+	<div class="options" style="left: 113px" id="mesh-option"> 
+		Mesh
+	</div>
+
+	<div class="slide-down" id="mesh-slide-down" style="left: 65px">
+		<div class="slide-down-option">
+			<img src="../img/System-Save-icon.png" class="block" height="20px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 5px">Save </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 28px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option">
+			<img src="../img/Open-icon.png" class="block" height="25px" width="22px" style="left: 4px; margin-top: -3px">
+			<div class="block" style="left: 34px; top: 34px">Open </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 57px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option">
+			<img src="../img/Export-icon.png" class="block" height="20px" width="20px" style="left: 6px">
+			<div class="block" style="left: 34px; top: 63px">Export </div>
+		</div>
+	</div>
+
+	<div class="options" style="left: 176px" id="add-option"> 
+		Add Mesh
+	</div>
+
+	<div class="slide-down" id="add-slide-down" style="left: 186px">
+		<div class="slide-down-option" onclick="shapez.makeShape('cube')">
+			<img src="../img/Cube-icon.png" class="block" height="22px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 5px">Cube </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 28px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option" onclick="shapez.makeShape('sphere')">
+			<img src="../img/Sphere-icon.png" class="block" height="20px" width="20px" style="left: 4px; margin-top: 1px">
+			<div class="block" style="left: 34px; top: 34px">Sphere </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 57px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option" onclick="shapez.makeShape('icosahedron')">
+			<img src="../img/Icosahedron-icon.png" class="block" height="24px" width="24px" style="left: 3px">
+			<div class="block" style="left: 34px; top: 63px">Icosahedron </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 87px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option" onclick="shapez.makeShape('octahedron')">
+			<img src="../img/Octahedron-icon.png" class="block" height="22px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 92px">Octahedron </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 116px; background-color: #A8A8A8"></div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 28px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option" onclick="shapez.makeShape('tetrahedron')">
+			<img src="../img/Tetrahedron-icon.png" class="block" height="20px" width="20px" style="left: 4px; margin-top: 1px">
+			<div class="block" style="left: 34px; top: 121px">Tetrahedron </div>
+		</div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 145px; background-color: #A8A8A8"></div>
+		<div class="block" style="width: 86px; height: 1px; right:5px; top: 57px; background-color: #A8A8A8"></div>
+		<div class="slide-down-option" onclick="shapez.makeShape('cylinder')">
+			<img src="../img/Cylinder-icon.png" class="block" height="24px" width="24px" style="left: 3px">
+			<div class="block" style="left: 34px; top: 150px">Cylinder </div>
+		</div>
+	</div>
+
+	<div class="options" style="left: 285px" id="view-option"> 
+		View
+	</div>
+
+	<div class="slide-down" id="view-slide-down" style="left: 295px">
+		<div class="slide-down-option" onclick="config.changeViews('wireframe')">
+			<img src="../img/Cube-icon.png" class="block" height="22px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 5px">Wireframe </div>
+		</div>
+		<div class="slide-down-option" onclick="config.changeViews('flatshade')">
+			<img src="../img/Cube-icon-flatshade.png" class="block" height="22px" width="20px" style="left: 4px">
+			<div class="block" style="left: 34px; top: 34px">Flatshade </div>
+		</div>
+	</div>
+</div>
+
+<div id="main-dragger"  class="main" style="z-index: 2; background-color: transparent; top: 40px">
+	<div id="main" class="main" style="z-index: 1">
+	
+	</div>
+</div>
+
+<div class="info-bar">
+	<img src="../img/Twitter-icon.png" height="40px" width="60px" class="info-bar-icon" style="top: 5px; right: 30px" id="Twitter-icon">
+	<img src="../img/Facebook-icon.png" height="42px" width="45px" class="info-bar-icon" style="top: 4px; right: 125px" id="Facebook-icon">
+	<img src="../img/Googleplus-icon.png" height="42px" width="45px" class="info-bar-icon" style="top: 4px; right: 205px" id="Googleplus-icon">
+</div>
+
+<div class="side-bar" id="side-bar" ><!-- onkeydown="chart.update(event);"-->
+	
+	<div class="delete" id="delete">
+		
+	</div>
+
+	<div class="block" style="z-index: 5; background-color: rgba(71, 71, 71, 0); top: 10px; right: 10px; left: 10px; height: 202px" id="chart-shadow">
+
+	</div>
+
+	<div class="mesh-chart" id="mesh-chart">
+		
+	</div>
+
+	<div id="edit-mesh" class="edit-mesh">
+		<table style="padding: 7px; color: #878787;">
+			<tr>
+				<td style="width: 54px">Name </td>
+				<td> <input class="input" id="edit-name" placeholder="name" onchange="chart.update('go')"></td>
+			</tr>
+			<tr>
+				<td style="width: 54px">Parent </td>
+				<td> <input class="input" id="edit-parent" placeholder="parent" onchange="chart.update('go')"></td>
+			</tr>
+		</table>
+		<table style="padding: 7px; color: #878787;">
+			<tr>
+				<td style="width: 100px">Scale </td>
+				<td> <input class="edit-input" id="edit-scale-x" placeholder="x" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-scale-y" placeholder="y" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-scale-z" placeholder="z" onchange="chart.update('go')"></td>
+			</tr>
+			<tr>
+				<td>Position </td>
+				<td> <input class="edit-input" id="edit-position-x" placeholder="x" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-position-y" placeholder="y" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-position-z" placeholder="z" onchange="chart.update('go')"></td>
+			</tr>
+			<tr>
+				<td>Rotation </td>
+				<td> <input class="edit-input" id="edit-rotation-x" placeholder="x" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-rotation-y" placeholder="y" onchange="chart.update('go')"></td>
+				<td> <input class="edit-input" id="edit-rotation-z" placeholder="z" onchange="chart.update('go')"></td>
+			</tr>
+		</table>
+		<table style="padding: 7px; color: #878787; margin-top: 10px">
+			<tr>
+				<td style="width: 100px !important">Color </td>
+				<td> <input class="edit-input" id="material-color" style="width: 75px; margin-left: -28px; margin-bottom: 10px" onchange="chart.update('go')"></td>
+			</tr>
+			<tr>
+				<td style="width: 100px !important">Transparent </td>
+				<td> <!-- <div class="true-false-btn" id='true-false-btn-opacity'></div> -->
+					<input id="true-false-btn-opacity" type="checkbox" class="w2ui-toggle blue" onchange="chart.update('go');"><div><div></div></div>
+				</td>
+			</tr>
+			<tr id="opacity">
+				<td style="width: 100px !important">Opacity </td>
+				<td> 
+					<input type="range" min="0.01" max="1" step="0.01" value="1" onchange="chart.update('go')" id="opacity-range">
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 100px !important">Wireframe </td>
+				<td> 
+					<input id="true-false-btn-wireframe" type="checkbox" class="w2ui-toggle blue" onchange="chart.update('go');"><div><div></div></div>
+				</td>
+			</tr>
+			<tr id="wireframe">
+				<td style="width: 100px !important">Line width </td>
+				<td> 
+					<input type="range" min="1" max="10" step="0.1" value="1" onchange="chart.update('go')" id="wireframe-range">
+				</td>
+			</tr>
+
+		</table>
+		<table style="padding: 7px; color: #878787; margin-top: 10px">
+			<tr>
+				<td style="width: 80px !important">
+					Texture
+				</td>
+				<td>
+					<div class="block" style="height: 20px; width: 30px; background-color: #D7D7D7; margin-top: -9px; cursor: pointer">
+
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="animation-holder" id="animation-holder">
+	<div class="block" style="top: 20px; bottom: -1px; left: 0px; width: 100px" id="frame-options">
+		<div class="block" style="left: 50px; bottom: 0px" id="play-holder">
+			<div class="block" style="border: 8px solid transparent; border-left: 12px solid #6E6E6E; left: 2px; bottom: 2px; height: 0px; width: 0px"></div>
+		</div>
+		<div class="block" style="left: 15px; bottom: 0px" onclick="animation.oneF('b');">
+			<div class="block" style="border: 8px solid transparent; border-right: 12px solid #6E6E6E; left: 2px; bottom: 2px; height: 0px; width: 0px"></div>
+			<div class="block" style="height: 14px; width: 4px; background-color: #6E6E6E; bottom: 0px; left: 23px; top: 50%; margin-top: -17px"></div>
+		</div>
+		<div class="block" style="left: 0px; bottom: 0px" onclick="animation.allF('b');">
+			<div class="block" style="border: 8px solid transparent; border-right: 12px solid #6E6E6E; left: 2px; bottom: 2px; height: 0px; width: 0px"></div>
+			<div class="block" style="height: 14px; width: 4px; background-color: #6E6E6E; bottom: 0px; left: 7px; top: 50%; margin-top: -17px"></div>
+		</div>
+		<div class="block" style="left: 72px; bottom: 0px" onclick="animation.oneF('f');">
+			<div class="block" style="border: 8px solid transparent; border-left: 12px solid #6E6E6E; left: 5px; bottom: 2px; height: 0px; width: 0px"></div>
+			<div class="block" style="height: 14px; width: 4px; background-color: #6E6E6E; bottom: 0px; left: 0px; top: 50%; margin-top: -17px"></div>
+		</div>
+		<div class="block" style="left: 90px; bottom: 0px" onclick="animation.allF('f');">
+			<div class="block" style="border: 8px solid transparent; border-left: 12px solid #6E6E6E; left: 2px; bottom: 2px; height: 0px; width: 0px"></div>
+			<div class="block" style="height: 14px; width: 4px; background-color: #6E6E6E; bottom: 0px; left: 13px; top: 50%; margin-top: -17px"></div>
+		</div>
+	</div>
+
+	<div class="frames" id="frames">
+
+	</div>
+</div>
+
+<div class="animation-option" id="animation-dragger">
+	<div class="block" style="border: 8px solid transparent; border-left: 8px solid #6E6E6E; height: 0px; width: 0px; top: 50%; margin-top: -8px; right: -6px"></div>
+	<div class="block" style="height: 16px; width: 3px; background-color: #6E6E6E; top: 50%; margin-top: -8px; left: 1px"></div>
+</div>
+	
+</body>
+</html>

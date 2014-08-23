@@ -1,0 +1,890 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'sudo', 'git' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose cache add [ 'sudo', null ]
+5 verbose cache add name=undefined spec="sudo" args=["sudo",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'sudo',
+6 verbose parsed url   path: 'sudo',
+6 verbose parsed url   href: 'sudo' }
+7 verbose cache add [ 'git', null ]
+8 verbose cache add name=undefined spec="git" args=["git",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'git',
+9 verbose parsed url   path: 'git',
+9 verbose parsed url   href: 'git' }
+10 silly lockFile 836c626d-sudo sudo
+11 verbose lock sudo /Users/vlad/.npm/836c626d-sudo.lock
+12 silly lockFile 46f1a0bd-git git
+13 verbose lock git /Users/vlad/.npm/46f1a0bd-git.lock
+14 silly lockFile 836c626d-sudo sudo
+15 silly lockFile 836c626d-sudo sudo
+16 silly lockFile 46f1a0bd-git git
+17 silly lockFile 46f1a0bd-git git
+18 verbose addNamed [ 'sudo', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile f2741ec4-sudo sudo@
+21 verbose lock sudo@ /Users/vlad/.npm/f2741ec4-sudo.lock
+22 verbose addNamed [ 'git', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile c6f8daad-git git@
+25 verbose lock git@ /Users/vlad/.npm/c6f8daad-git.lock
+26 silly addNameRange { name: 'sudo', range: '*', hasData: false }
+27 silly addNameRange { name: 'git', range: '*', hasData: false }
+28 verbose url raw sudo
+29 verbose url resolving [ 'https://registry.npmjs.org/', './sudo' ]
+30 verbose url resolved https://registry.npmjs.org/sudo
+31 info trying registry request attempt 1 at 10:54:16
+32 verbose etag "E9F8WU88HY6D9KY0Z1GKDF1O9"
+33 http GET https://registry.npmjs.org/sudo
+34 verbose url raw git
+35 verbose url resolving [ 'https://registry.npmjs.org/', './git' ]
+36 verbose url resolved https://registry.npmjs.org/git
+37 info trying registry request attempt 1 at 10:54:16
+38 verbose etag "3HH3B8E538155LX9OLEDO3GO3"
+39 http GET https://registry.npmjs.org/git
+40 http 304 https://registry.npmjs.org/git
+41 silly registry.get cb [ 304,
+41 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:14 GMT',
+41 silly registry.get     server: 'Apache',
+41 silly registry.get     via: '1.1 varnish',
+41 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:14 GMT',
+41 silly registry.get     'cache-control': 'max-age=60',
+41 silly registry.get     etag: '"3HH3B8E538155LX9OLEDO3GO3"',
+41 silly registry.get     'x-served-by': 'cache-iad2133-IAD',
+41 silly registry.get     'x-cache': 'HIT',
+41 silly registry.get     'x-cache-hits': '1',
+41 silly registry.get     'x-timer': 'S1408038854.371914,VS0,VE0',
+41 silly registry.get     vary: 'Accept',
+41 silly registry.get     'content-length': '0',
+41 silly registry.get     'keep-alive': 'timeout=10, max=50',
+41 silly registry.get     connection: 'Keep-Alive' } ]
+42 verbose etag git from cache
+43 silly addNameRange number 2 { name: 'git', range: '*', hasData: true }
+44 silly addNameRange versions [ 'git',
+44 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5' ] ]
+45 verbose addNamed [ 'git', '0.1.5' ]
+46 verbose addNamed [ '0.1.5', '0.1.5' ]
+47 silly lockFile c881c5ba-git-0-1-5 git@0.1.5
+48 verbose lock git@0.1.5 /Users/vlad/.npm/c881c5ba-git-0-1-5.lock
+49 silly lockFile c881c5ba-git-0-1-5 git@0.1.5
+50 silly lockFile c881c5ba-git-0-1-5 git@0.1.5
+51 silly lockFile c6f8daad-git git@
+52 silly lockFile c6f8daad-git git@
+53 http 304 https://registry.npmjs.org/sudo
+54 silly registry.get cb [ 304,
+54 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:14 GMT',
+54 silly registry.get     server: 'Apache',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:14 GMT',
+54 silly registry.get     'cache-control': 'max-age=60',
+54 silly registry.get     etag: '"E9F8WU88HY6D9KY0Z1GKDF1O9"',
+54 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+54 silly registry.get     'x-cache': 'HIT',
+54 silly registry.get     'x-cache-hits': '1',
+54 silly registry.get     'x-timer': 'S1408038854.369041,VS0,VE99',
+54 silly registry.get     vary: 'Accept',
+54 silly registry.get     'content-length': '0',
+54 silly registry.get     'keep-alive': 'timeout=10, max=50',
+54 silly registry.get     connection: 'Keep-Alive' } ]
+55 verbose etag sudo from cache
+56 silly addNameRange number 2 { name: 'sudo', range: '*', hasData: true }
+57 silly addNameRange versions [ 'sudo', [ '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+58 verbose addNamed [ 'sudo', '1.0.3' ]
+59 verbose addNamed [ '1.0.3', '1.0.3' ]
+60 silly lockFile 2f2ed0f4-sudo-1-0-3 sudo@1.0.3
+61 verbose lock sudo@1.0.3 /Users/vlad/.npm/2f2ed0f4-sudo-1-0-3.lock
+62 silly lockFile 2f2ed0f4-sudo-1-0-3 sudo@1.0.3
+63 silly lockFile 2f2ed0f4-sudo-1-0-3 sudo@1.0.3
+64 silly lockFile f2741ec4-sudo sudo@
+65 silly lockFile f2741ec4-sudo sudo@
+66 silly resolved [ { name: 'git',
+66 silly resolved     description: 'A node.js library for git',
+66 silly resolved     version: '0.1.5',
+66 silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+66 silly resolved     contributors: [ [Object] ],
+66 silly resolved     repository: { type: 'git', url: 'git@github.com:christkv/node-git.git' },
+66 silly resolved     bugs: { url: 'http://groups.google.com/group/nodegit' },
+66 silly resolved     main: './lib/git/index',
+66 silly resolved     directories: { lib: './lib/git' },
+66 silly resolved     engines: { node: '>=0.4.0' },
+66 silly resolved     dependencies: { mime: '1.2.9' },
+66 silly resolved     devDependencies: { nodeunit: '>=0.5.1' },
+66 silly resolved     licenses: [ [Object] ],
+66 silly resolved     scripts: { test: 'nodeunit test' },
+66 silly resolved     readme: '[![build status](https://secure.travis-ci.org/christkv/node-git.png)](http://travis-ci.org/christkv/node-git)\n\n# Introduction\n\nThis is a library for Git written in Node.js. It\'s as close a port of grit http://github.com/mojombo/grit.\n\nThe idea is to allow for manipulation of git repositories by the node.js application. Not everything is\nimplemented directly in node-git. Some of the stuff is using the native git command line instead of\ndirect javascript code. Also it\'s fairly synchronous right now but that will hopefully change a little\nby little over time as it gets more stable and I start using it in real life scenarios.\n\n## Github information\n\nThe source code is available at http://github.com/christkv/node-git.\nYou can either clone the repository or download a tarball of the latest release.\n\nOnce you have the source you can test the driver by running\n\n\t$ make test\n\nOn windows:\n\n\tPS > node.exe .\\node_modules\\nodeunit\\bin\\nodeunit .\\test\n\t\n## Examples\n\nFor simple examples of usage look at the tests included in the repository.\n\n## Notes\n\nThe current version is basic git support, don\'t expect everything to work as you expect it\noff the bat.\n\n## License\n\n\tCopyright 2009 - 2010 Christian Amor Kvalheim.\n\n\t  Licensed under the Apache License, Version 2.0 (the "License");\n\t  you may not use this file except in compliance with the License.\n\t  You may obtain a copy of the License at\n\n\t      http://www.apache.org/licenses/LICENSE-2.0\n\n\t  Unless required by applicable law or agreed to in writing, software\n\t  distributed under the License is distributed on an "AS IS" BASIS,\n\t  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\t  See the License for the specific language governing permissions and\n\t  limitations under the License.\n',
+66 silly resolved     readmeFilename: 'README.md',
+66 silly resolved     _id: 'git@0.1.5',
+66 silly resolved     dist:
+66 silly resolved      { shasum: '9ef62df93f851c27542143bf52d1c68b1017ca15',
+66 silly resolved        tarball: 'http://registry.npmjs.org/git/-/git-0.1.5.tgz' },
+66 silly resolved     _from: 'git@',
+66 silly resolved     _npmVersion: '1.2.23',
+66 silly resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+66 silly resolved     maintainers: [ [Object] ],
+66 silly resolved     _shasum: '9ef62df93f851c27542143bf52d1c68b1017ca15',
+66 silly resolved     _resolved: 'https://registry.npmjs.org/git/-/git-0.1.5.tgz',
+66 silly resolved     homepage: 'https://github.com/christkv/node-git' },
+66 silly resolved   { author:
+66 silly resolved      { name: 'Jakob Borg',
+66 silly resolved        email: 'jakob@nym.se',
+66 silly resolved        url: 'http://nym.se/' },
+66 silly resolved     name: 'sudo',
+66 silly resolved     description: 'Wrap sudo with optional password cache',
+66 silly resolved     version: '1.0.3',
+66 silly resolved     homepage: 'https://github.com/calmh/node-sudo',
+66 silly resolved     repository: { type: 'git', url: 'git://github.com/calmh/node-sudo.git' },
+66 silly resolved     main: 'lib/sudo.js',
+66 silly resolved     dependencies: { inpath: '~1.0.2', read: '~1.0.3', pidof: '~1.0.2' },
+66 silly resolved     devDependencies: {},
+66 silly resolved     optionalDependencies: {},
+66 silly resolved     engines: { node: '>=0.8' },
+66 silly resolved     readme: 'node-sudo\n=========\n\nA `child_process.spawn` but with `sudo` in between. The `sudo` password dialog\nis abstracted away so that the calling Node script can interact with the\nprogram that is run under `sudo` without worrying about it.\n\nSynopsis\n--------\n\n```javascript\nsudo(args, options)\n```\n\n - `args`: An array of arguments to `sudo`. Can be both options (such as `-v`\n   or `-E`) and the program to run. Example: `[\'ls\']`.\n\n - `options`: An optional object containing options. Recognized options are:\n\n    - `cachePassword`: Boolean; whether to remember the password between\n      invocations or not.\n\n    - `prompt`: String; what to display to the user when the password is\n      needed.\n\n    - `spawnOptions`: Object; passed on directly to `spawn`. `stdio` or\n      `customFds` will be overwritten.\n\nExample\n-------\n\n```javascript\nvar sudo = require(\'sudo\');\nvar options = {\n    cachePassword: true,\n    prompt: \'Password, yo? \',\n    spawnOptions: { /* other options for spawn */ }\n};\nvar child = sudo([ \'ls\', \'-l\', \'/tmp\' ], options);\nchild.stdout.on(\'data\', function (data) {\n    console.log(data.toString());\n});\n```\n\nLicense\n-------\n\nMIT\n',
+66 silly resolved     _id: 'sudo@1.0.3',
+66 silly resolved     dist:
+66 silly resolved      { shasum: 'ccf28669120f8b74f82b846dff7f1c95120eff20',
+66 silly resolved        tarball: 'http://registry.npmjs.org/sudo/-/sudo-1.0.3.tgz' },
+66 silly resolved     _npmVersion: '1.1.62',
+66 silly resolved     _npmUser: { name: 'calmh', email: 'jakob@nym.se' },
+66 silly resolved     maintainers: [ [Object] ],
+66 silly resolved     directories: {},
+66 silly resolved     _shasum: 'ccf28669120f8b74f82b846dff7f1c95120eff20',
+66 silly resolved     _from: 'sudo@',
+66 silly resolved     _resolved: 'https://registry.npmjs.org/sudo/-/sudo-1.0.3.tgz',
+66 silly resolved     bugs: { url: 'https://github.com/calmh/node-sudo/issues' } } ]
+67 info install git@0.1.5 into /Users/vlad
+68 info install sudo@1.0.3 into /Users/vlad
+69 info installOne git@0.1.5
+70 info installOne sudo@1.0.3
+71 info /Users/vlad/node_modules/git unbuild
+72 info /Users/vlad/node_modules/sudo unbuild
+73 info preuninstall sudo@1.0.3
+74 verbose tar unpack /Users/vlad/.npm/git/0.1.5/package.tgz
+75 silly lockFile 345a10ff-tar-Users-vlad-node-modules-git tar:///Users/vlad/node_modules/git
+76 verbose lock tar:///Users/vlad/node_modules/git /Users/vlad/.npm/345a10ff-tar-Users-vlad-node-modules-git.lock
+77 silly lockFile 026a20db-s-vlad-npm-git-0-1-5-package-tgz tar:///Users/vlad/.npm/git/0.1.5/package.tgz
+78 verbose lock tar:///Users/vlad/.npm/git/0.1.5/package.tgz /Users/vlad/.npm/026a20db-s-vlad-npm-git-0-1-5-package-tgz.lock
+79 info uninstall sudo@1.0.3
+80 verbose true,/Users/vlad/node_modules,/Users/vlad/node_modules unbuild sudo@1.0.3
+81 info postuninstall sudo@1.0.3
+82 silly gunzTarPerm modes [ '755', '644' ]
+83 silly gunzTarPerm extractEntry package.json
+84 silly gunzTarPerm extractEntry .npmignore
+85 silly gunzTarPerm extractEntry README.md
+86 silly gunzTarPerm extractEntry .travis.yml
+87 silly gunzTarPerm extractEntry benchmarks/benchmark.js
+88 silly gunzTarPerm extractEntry lib/diff/block.js
+89 silly gunzTarPerm extractEntry lib/diff/callbacks.js
+90 verbose tar unpack /Users/vlad/.npm/sudo/1.0.3/package.tgz
+91 silly lockFile 23c29c98-tar-Users-vlad-node-modules-sudo tar:///Users/vlad/node_modules/sudo
+92 verbose lock tar:///Users/vlad/node_modules/sudo /Users/vlad/.npm/23c29c98-tar-Users-vlad-node-modules-sudo.lock
+93 silly lockFile eaa17932--vlad-npm-sudo-1-0-3-package-tgz tar:///Users/vlad/.npm/sudo/1.0.3/package.tgz
+94 verbose lock tar:///Users/vlad/.npm/sudo/1.0.3/package.tgz /Users/vlad/.npm/eaa17932--vlad-npm-sudo-1-0-3-package-tgz.lock
+95 silly gunzTarPerm modes [ '755', '644' ]
+96 silly gunzTarPerm extractEntry package.json
+97 silly gunzTarPerm extractEntry lib/diff/change.js
+98 silly gunzTarPerm extractEntry .npmignore
+99 silly gunzTarPerm extractEntry README.md
+100 silly gunzTarPerm extractEntry lib/diff/diff.js
+101 silly gunzTarPerm extractEntry lib/diff/hunk.js
+102 silly gunzTarPerm extractEntry LICENSE
+103 silly gunzTarPerm extractEntry lib/sudo.js
+104 silly gunzTarPerm extractEntry lib/git/actor.js
+105 silly gunzTarPerm extractEntry lib/git/git_file_operations.js
+106 silly gunzTarPerm extractEntry lib/git/git_index.js
+107 silly gunzTarPerm extractEntry lib/git/git_object.js
+108 silly lockFile 23c29c98-tar-Users-vlad-node-modules-sudo tar:///Users/vlad/node_modules/sudo
+109 silly lockFile 23c29c98-tar-Users-vlad-node-modules-sudo tar:///Users/vlad/node_modules/sudo
+110 silly lockFile eaa17932--vlad-npm-sudo-1-0-3-package-tgz tar:///Users/vlad/.npm/sudo/1.0.3/package.tgz
+111 silly lockFile eaa17932--vlad-npm-sudo-1-0-3-package-tgz tar:///Users/vlad/.npm/sudo/1.0.3/package.tgz
+112 info preinstall sudo@1.0.3
+113 silly gunzTarPerm extractEntry lib/git/git.js
+114 silly gunzTarPerm extractEntry lib/git/binary_parser.js
+115 verbose readDependencies using package.json deps
+116 verbose readDependencies using package.json deps
+117 verbose cache add [ 'inpath@~1.0.2', null ]
+118 verbose cache add name=undefined spec="inpath@~1.0.2" args=["inpath@~1.0.2",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'inpath@~1.0.2',
+119 verbose parsed url   path: 'inpath@~1.0.2',
+119 verbose parsed url   href: 'inpath@~1.0.2' }
+120 verbose cache add [ 'read@~1.0.3', null ]
+121 verbose cache add name=undefined spec="read@~1.0.3" args=["read@~1.0.3",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'read@~1.0.3',
+122 verbose parsed url   path: 'read@~1.0.3',
+122 verbose parsed url   href: 'read@~1.0.3' }
+123 verbose cache add [ 'pidof@~1.0.2', null ]
+124 verbose cache add name=undefined spec="pidof@~1.0.2" args=["pidof@~1.0.2",null]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: 'pidof@~1.0.2',
+125 verbose parsed url   path: 'pidof@~1.0.2',
+125 verbose parsed url   href: 'pidof@~1.0.2' }
+126 verbose cache add name="inpath" spec="~1.0.2" args=["inpath","~1.0.2"]
+127 verbose parsed url { protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: '~1.0.2',
+127 verbose parsed url   path: '~1.0.2',
+127 verbose parsed url   href: '~1.0.2' }
+128 verbose addNamed [ 'inpath', '~1.0.2' ]
+129 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+130 silly lockFile 356e3206-inpath-1-0-2 inpath@~1.0.2
+131 verbose lock inpath@~1.0.2 /Users/vlad/.npm/356e3206-inpath-1-0-2.lock
+132 verbose cache add name="read" spec="~1.0.3" args=["read","~1.0.3"]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: '~1.0.3',
+133 verbose parsed url   path: '~1.0.3',
+133 verbose parsed url   href: '~1.0.3' }
+134 verbose addNamed [ 'read', '~1.0.3' ]
+135 verbose addNamed [ null, '>=1.0.3-0 <1.1.0-0' ]
+136 silly lockFile 639d0055-read-1-0-3 read@~1.0.3
+137 verbose lock read@~1.0.3 /Users/vlad/.npm/639d0055-read-1-0-3.lock
+138 verbose cache add name="pidof" spec="~1.0.2" args=["pidof","~1.0.2"]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: '~1.0.2',
+139 verbose parsed url   path: '~1.0.2',
+139 verbose parsed url   href: '~1.0.2' }
+140 verbose addNamed [ 'pidof', '~1.0.2' ]
+141 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+142 silly lockFile 0e2e629f-pidof-1-0-2 pidof@~1.0.2
+143 verbose lock pidof@~1.0.2 /Users/vlad/.npm/0e2e629f-pidof-1-0-2.lock
+144 silly addNameRange { name: 'inpath', range: '>=1.0.2-0 <1.1.0-0', hasData: false }
+145 silly addNameRange { name: 'read', range: '>=1.0.3-0 <1.1.0-0', hasData: false }
+146 silly addNameRange { name: 'pidof', range: '>=1.0.2-0 <1.1.0-0', hasData: false }
+147 verbose url raw inpath
+148 verbose url resolving [ 'https://registry.npmjs.org/', './inpath' ]
+149 verbose url resolved https://registry.npmjs.org/inpath
+150 info trying registry request attempt 1 at 10:54:17
+151 verbose etag "ESOJXHSKNWJNKHL2VXUJ4U1XJ"
+152 http GET https://registry.npmjs.org/inpath
+153 verbose url raw read
+154 verbose url resolving [ 'https://registry.npmjs.org/', './read' ]
+155 verbose url resolved https://registry.npmjs.org/read
+156 info trying registry request attempt 1 at 10:54:17
+157 verbose etag "ZO63Y2XIWNSFG62LTX37QWN7"
+158 http GET https://registry.npmjs.org/read
+159 verbose url raw pidof
+160 verbose url resolving [ 'https://registry.npmjs.org/', './pidof' ]
+161 verbose url resolved https://registry.npmjs.org/pidof
+162 info trying registry request attempt 1 at 10:54:17
+163 verbose etag "9VCC1L4QE3UE9FOGC47MXA7SZ"
+164 http GET https://registry.npmjs.org/pidof
+165 silly gunzTarPerm extractEntry lib/git/tree.js
+166 silly gunzTarPerm extractEntry lib/git/loose_storage.js
+167 silly gunzTarPerm extractEntry lib/git/merge.js
+168 silly gunzTarPerm extractEntry lib/git/pack_storage.js
+169 silly gunzTarPerm extractEntry lib/git/file_window.js
+170 silly gunzTarPerm extractEntry lib/git/raw_object.js
+171 silly gunzTarPerm extractEntry lib/git/file_index.js
+172 silly gunzTarPerm extractEntry lib/git/ref.js
+173 silly gunzTarPerm extractEntry lib/git/diff.js
+174 silly gunzTarPerm extractEntry lib/git/remote.js
+175 silly gunzTarPerm extractEntry lib/git/config.js
+176 silly gunzTarPerm extractEntry lib/git/repo.js
+177 silly gunzTarPerm extractEntry lib/git/commit_stats.js
+178 silly gunzTarPerm extractEntry lib/git/repository.js
+179 silly gunzTarPerm extractEntry lib/git/commit.js
+180 silly gunzTarPerm extractEntry lib/git/status.js
+181 silly gunzTarPerm extractEntry lib/git/blob.js
+182 silly gunzTarPerm extractEntry lib/git/status_file.js
+183 silly gunzTarPerm extractEntry lib/git/blame_line.js
+184 silly gunzTarPerm extractEntry lib/git/sub_module.js
+185 silly gunzTarPerm extractEntry lib/git/blame.js
+186 silly gunzTarPerm extractEntry lib/git/tag.js
+187 silly gunzTarPerm extractEntry lib/git/head.js
+188 silly gunzTarPerm extractEntry lib/git/user_info.js
+189 silly gunzTarPerm extractEntry lib/git/index.js
+190 silly gunzTarPerm extractEntry lib/git/internal/directory_entry.js
+191 silly gunzTarPerm extractEntry lib/git/internal/git_blob.js
+192 silly gunzTarPerm extractEntry lib/git/internal/git_commit.js
+193 silly gunzTarPerm extractEntry lib/git/internal/git_tag.js
+194 silly gunzTarPerm extractEntry lib/git/internal/git_tree.js
+195 silly gunzTarPerm extractEntry lib/sprintf/sprintf.js
+196 silly gunzTarPerm extractEntry lib/zlib/zlib.js
+197 silly lockFile 345a10ff-tar-Users-vlad-node-modules-git tar:///Users/vlad/node_modules/git
+198 silly lockFile 345a10ff-tar-Users-vlad-node-modules-git tar:///Users/vlad/node_modules/git
+199 silly lockFile 026a20db-s-vlad-npm-git-0-1-5-package-tgz tar:///Users/vlad/.npm/git/0.1.5/package.tgz
+200 silly lockFile 026a20db-s-vlad-npm-git-0-1-5-package-tgz tar:///Users/vlad/.npm/git/0.1.5/package.tgz
+201 info preinstall git@0.1.5
+202 verbose readDependencies using package.json deps
+203 verbose readDependencies using package.json deps
+204 verbose cache add [ 'mime@1.2.9', null ]
+205 verbose cache add name=undefined spec="mime@1.2.9" args=["mime@1.2.9",null]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: 'mime@1.2.9',
+206 verbose parsed url   path: 'mime@1.2.9',
+206 verbose parsed url   href: 'mime@1.2.9' }
+207 verbose cache add name="mime" spec="1.2.9" args=["mime","1.2.9"]
+208 verbose parsed url { protocol: null,
+208 verbose parsed url   slashes: null,
+208 verbose parsed url   auth: null,
+208 verbose parsed url   host: null,
+208 verbose parsed url   port: null,
+208 verbose parsed url   hostname: null,
+208 verbose parsed url   hash: null,
+208 verbose parsed url   search: null,
+208 verbose parsed url   query: null,
+208 verbose parsed url   pathname: '1.2.9',
+208 verbose parsed url   path: '1.2.9',
+208 verbose parsed url   href: '1.2.9' }
+209 verbose addNamed [ 'mime', '1.2.9' ]
+210 verbose addNamed [ '1.2.9', '1.2.9' ]
+211 silly lockFile 24648bbc-mime-1-2-9 mime@1.2.9
+212 verbose lock mime@1.2.9 /Users/vlad/.npm/24648bbc-mime-1-2-9.lock
+213 verbose url raw mime
+214 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+215 verbose url resolved https://registry.npmjs.org/mime
+216 info trying registry request attempt 1 at 10:54:17
+217 verbose etag "8MVGFBSD9OQ39ZG21QCUJEQDE"
+218 http GET https://registry.npmjs.org/mime
+219 http 304 https://registry.npmjs.org/read
+220 silly registry.get cb [ 304,
+220 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:14 GMT',
+220 silly registry.get     server: 'Apache',
+220 silly registry.get     via: '1.1 varnish',
+220 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:14 GMT',
+220 silly registry.get     'cache-control': 'max-age=60',
+220 silly registry.get     etag: '"ZO63Y2XIWNSFG62LTX37QWN7"',
+220 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+220 silly registry.get     'x-cache': 'HIT',
+220 silly registry.get     'x-cache-hits': '1',
+220 silly registry.get     'x-timer': 'S1408038854.919857,VS0,VE0',
+220 silly registry.get     vary: 'Accept',
+220 silly registry.get     'content-length': '0',
+220 silly registry.get     'keep-alive': 'timeout=10, max=50',
+220 silly registry.get     connection: 'Keep-Alive' } ]
+221 verbose etag read from cache
+222 silly addNameRange number 2 { name: 'read', range: '>=1.0.3-0 <1.1.0-0', hasData: true }
+223 silly addNameRange versions [ 'read',
+223 silly addNameRange   [ '0.0.1',
+223 silly addNameRange     '0.0.2',
+223 silly addNameRange     '0.0.3',
+223 silly addNameRange     '0.1.0',
+223 silly addNameRange     '0.1.1',
+223 silly addNameRange     '1.0.0',
+223 silly addNameRange     '1.0.1',
+223 silly addNameRange     '1.0.2',
+223 silly addNameRange     '1.0.3',
+223 silly addNameRange     '1.0.4',
+223 silly addNameRange     '1.0.5' ] ]
+224 verbose addNamed [ 'read', '1.0.5' ]
+225 verbose addNamed [ '1.0.5', '1.0.5' ]
+226 silly lockFile 4450a55a-read-1-0-5 read@1.0.5
+227 verbose lock read@1.0.5 /Users/vlad/.npm/4450a55a-read-1-0-5.lock
+228 http 304 https://registry.npmjs.org/pidof
+229 silly registry.get cb [ 304,
+229 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:14 GMT',
+229 silly registry.get     server: 'Apache',
+229 silly registry.get     via: '1.1 varnish',
+229 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:14 GMT',
+229 silly registry.get     'cache-control': 'max-age=60',
+229 silly registry.get     etag: '"9VCC1L4QE3UE9FOGC47MXA7SZ"',
+229 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+229 silly registry.get     'x-cache': 'HIT',
+229 silly registry.get     'x-cache-hits': '1',
+229 silly registry.get     'x-timer': 'S1408038854.914534,VS0,VE11',
+229 silly registry.get     vary: 'Accept',
+229 silly registry.get     'content-length': '0',
+229 silly registry.get     'keep-alive': 'timeout=10, max=50',
+229 silly registry.get     connection: 'Keep-Alive' } ]
+230 verbose etag pidof from cache
+231 http 304 https://registry.npmjs.org/inpath
+232 silly registry.get cb [ 304,
+232 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:14 GMT',
+232 silly registry.get     server: 'Apache',
+232 silly registry.get     via: '1.1 varnish',
+232 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:14 GMT',
+232 silly registry.get     'cache-control': 'max-age=60',
+232 silly registry.get     etag: '"ESOJXHSKNWJNKHL2VXUJ4U1XJ"',
+232 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+232 silly registry.get     'x-cache': 'HIT',
+232 silly registry.get     'x-cache-hits': '1',
+232 silly registry.get     'x-timer': 'S1408038854.910476,VS0,VE21',
+232 silly registry.get     vary: 'Accept',
+232 silly registry.get     'content-length': '0',
+232 silly registry.get     'keep-alive': 'timeout=10, max=50',
+232 silly registry.get     connection: 'Keep-Alive' } ]
+233 verbose etag inpath from cache
+234 silly addNameRange number 2 { name: 'pidof', range: '>=1.0.2-0 <1.1.0-0', hasData: true }
+235 silly addNameRange versions [ 'pidof', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+236 verbose addNamed [ 'pidof', '1.0.2' ]
+237 verbose addNamed [ '1.0.2', '1.0.2' ]
+238 silly lockFile c3c08dd0-pidof-1-0-2 pidof@1.0.2
+239 verbose lock pidof@1.0.2 /Users/vlad/.npm/c3c08dd0-pidof-1-0-2.lock
+240 silly lockFile 4450a55a-read-1-0-5 read@1.0.5
+241 silly lockFile 4450a55a-read-1-0-5 read@1.0.5
+242 silly lockFile 639d0055-read-1-0-3 read@~1.0.3
+243 silly lockFile 639d0055-read-1-0-3 read@~1.0.3
+244 silly addNameRange number 2 { name: 'inpath', range: '>=1.0.2-0 <1.1.0-0', hasData: true }
+245 silly addNameRange versions [ 'inpath', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+246 verbose addNamed [ 'inpath', '1.0.2' ]
+247 verbose addNamed [ '1.0.2', '1.0.2' ]
+248 silly lockFile a1783da2-inpath-1-0-2 inpath@1.0.2
+249 verbose lock inpath@1.0.2 /Users/vlad/.npm/a1783da2-inpath-1-0-2.lock
+250 silly lockFile c3c08dd0-pidof-1-0-2 pidof@1.0.2
+251 silly lockFile c3c08dd0-pidof-1-0-2 pidof@1.0.2
+252 silly lockFile 0e2e629f-pidof-1-0-2 pidof@~1.0.2
+253 silly lockFile 0e2e629f-pidof-1-0-2 pidof@~1.0.2
+254 silly lockFile a1783da2-inpath-1-0-2 inpath@1.0.2
+255 silly lockFile a1783da2-inpath-1-0-2 inpath@1.0.2
+256 silly lockFile 356e3206-inpath-1-0-2 inpath@~1.0.2
+257 silly lockFile 356e3206-inpath-1-0-2 inpath@~1.0.2
+258 silly resolved [ { name: 'read',
+258 silly resolved     version: '1.0.5',
+258 silly resolved     main: 'lib/read.js',
+258 silly resolved     dependencies: { 'mute-stream': '~0.0.4' },
+258 silly resolved     devDependencies: { tap: '*' },
+258 silly resolved     engines: { node: '>=0.8' },
+258 silly resolved     author:
+258 silly resolved      { name: 'Isaac Z. Schlueter',
+258 silly resolved        email: 'i@izs.me',
+258 silly resolved        url: 'http://blog.izs.me/' },
+258 silly resolved     description: 'read(1) for node programs',
+258 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/read.git' },
+258 silly resolved     license: 'BSD',
+258 silly resolved     scripts: { test: 'tap test/*.js' },
+258 silly resolved     readme: '## read\n\nFor reading user input from stdin.\n\nSimilar to the `readline` builtin\'s `question()` method, but with a\nfew more features.\n\n## USAGE\n\n```javascript\nvar read = require("read")\nread(options, callback)\n```\n\nThe callback gets called with either the user input, or the default\nspecified, or an error, as `callback(error, result, isDefault)`\nnode style.\n\n## OPTIONS\n\nEvery option is optional.\n\n* `prompt` What to write to stdout before reading input.\n* `silent` Don\'t echo the output as the user types it.\n* `replace` Replace silenced characters with the supplied character value.\n* `timeout` Number of ms to wait for user input before giving up.\n* `default` The default value if the user enters nothing.\n* `edit` Allow the user to edit the default value.\n* `terminal` Treat the output as a TTY, whether it is or not.\n* `input` Readable stream to get input data from. (default `process.stdin`)\n* `output` Writeable stream to write prompts to. (default: `process.stdout`)\n\nIf silent is true, and the input is a TTY, then read will set raw\nmode, and read character by character.\n\n## COMPATIBILITY\n\nThis module works sort of with node 0.6.  It does not work with node\nversions less than 0.6.  It is best on node 0.8.\n\nOn node version 0.6, it will remove all listeners on the input\nstream\'s `data` and `keypress` events, because the readline module did\nnot fully clean up after itself in that version of node, and did not\nmake it possible to clean up after it in a way that has no potential\nfor side effects.\n\nAdditionally, some of the readline options (like `terminal`) will not\nfunction in versions of node before 0.8, because they were not\nimplemented in the builtin readline module.\n\n## CONTRIBUTING\n\nPatches welcome.\n',
+258 silly resolved     readmeFilename: 'README.md',
+258 silly resolved     bugs: { url: 'https://github.com/isaacs/read/issues' },
+258 silly resolved     _id: 'read@1.0.5',
+258 silly resolved     dist:
+258 silly resolved      { shasum: '007a3d169478aa710a491727e453effb92e76203',
+258 silly resolved        tarball: 'http://registry.npmjs.org/read/-/read-1.0.5.tgz' },
+258 silly resolved     _from: 'read@~1.0.3',
+258 silly resolved     _npmVersion: '1.3.4',
+258 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+258 silly resolved     maintainers: [ [Object] ],
+258 silly resolved     directories: {},
+258 silly resolved     _shasum: '007a3d169478aa710a491727e453effb92e76203',
+258 silly resolved     _resolved: 'https://registry.npmjs.org/read/-/read-1.0.5.tgz',
+258 silly resolved     homepage: 'https://github.com/isaacs/read' },
+258 silly resolved   { author:
+258 silly resolved      { name: 'Jakob Borg',
+258 silly resolved        email: 'jakob@nym.se',
+258 silly resolved        url: 'http://nym.se/' },
+258 silly resolved     name: 'pidof',
+258 silly resolved     description: 'Get PID of a running process',
+258 silly resolved     version: '1.0.2',
+258 silly resolved     main: './lib/pidof.js',
+258 silly resolved     homepage: 'https://github.com/calmh/node-pidof',
+258 silly resolved     repository: { url: 'https://github.com/calmh/node-pidof.git' },
+258 silly resolved     scripts: { test: 'mocha -R spec' },
+258 silly resolved     dependencies: {},
+258 silly resolved     devDependencies: { should: '0.6.x', mocha: '1.1.x' },
+258 silly resolved     optionalDependencies: {},
+258 silly resolved     engines: { node: '*' },
+258 silly resolved     readme: 'pidof\n=====\n\n[![build status](https://secure.travis-ci.org/calmh/node-pidof.png)](http://travis-ci.org/calmh/node-pidof)\n\nGet the PID of a running process, or `null` if it couldn\'t be found. Tested on\nMac OS X, Solaris and Linux. Guaranteed not to work on Windows.\n\nExample\n-------\n\n    var pidof = require(\'pidof\');\n    \n    pidof(\'cron\', function (err, pid) {\n        if (err) {\n            console.log(\'Weird error getting PIDs\');\n            console.log(err);\n        } else {\n            if (pid) {\n                console.log(\'Found cron at pid \' + pid);\n            } else {\n                console.log(\'Seems like there\\\'s no cron on this system\');\n            }\n        }\n    });\n\nLicense\n-------\n\nMIT\n\n',
+258 silly resolved     _id: 'pidof@1.0.2',
+258 silly resolved     dist:
+258 silly resolved      { shasum: 'fba0eae1c8335a11eb8099f5d0f3efbc45cb4e90',
+258 silly resolved        tarball: 'http://registry.npmjs.org/pidof/-/pidof-1.0.2.tgz' },
+258 silly resolved     maintainers: [ [Object] ],
+258 silly resolved     directories: {},
+258 silly resolved     _shasum: 'fba0eae1c8335a11eb8099f5d0f3efbc45cb4e90',
+258 silly resolved     _from: 'pidof@~1.0.2',
+258 silly resolved     _resolved: 'https://registry.npmjs.org/pidof/-/pidof-1.0.2.tgz',
+258 silly resolved     bugs: { url: 'https://github.com/calmh/node-pidof/issues' } },
+258 silly resolved   { author:
+258 silly resolved      { name: 'Jakob Borg',
+258 silly resolved        email: 'jakob@nym.se',
+258 silly resolved        url: 'http://nym.se/' },
+258 silly resolved     name: 'inpath',
+258 silly resolved     description: 'Find executable in path',
+258 silly resolved     version: '1.0.2',
+258 silly resolved     main: './lib/inpath.js',
+258 silly resolved     homepage: 'https://github.com/calmh/node-inpath',
+258 silly resolved     repository: { url: 'https://github.com/calmh/node-inpath.git' },
+258 silly resolved     scripts: { test: 'mocha -R spec' },
+258 silly resolved     dependencies: {},
+258 silly resolved     devDependencies: { should: '0.6.x', mocha: '1.1.x' },
+258 silly resolved     optionalDependencies: {},
+258 silly resolved     engines: { node: '*' },
+258 silly resolved     readme: 'inpath\n======\n\n[![build status](https://secure.travis-ci.org/calmh/node-inpath.png)](http://travis-ci.org/calmh/node-inpath)\n\nFind an executable in the `$PATH`.\n\nExample\n-------\n\n    var inpathSync = require(\'inpath\').sync;\n    \n    var env = inpathSync(\'env\');\n    console.log(env); // => /usr/bin/env\n    \n    var none = inpathSync(\'4A87553D-6BAC-42EE-A699-BAF7830E453A\');\n    console.log(none); // => null\n\nLicense\n-------\n\nMIT\n\n',
+258 silly resolved     _id: 'inpath@1.0.2',
+258 silly resolved     dist:
+258 silly resolved      { shasum: '4ac219710ec7a72f460ff94bf424dd3ef0e52817',
+258 silly resolved        tarball: 'http://registry.npmjs.org/inpath/-/inpath-1.0.2.tgz' },
+258 silly resolved     maintainers: [ [Object] ],
+258 silly resolved     directories: {},
+258 silly resolved     _shasum: '4ac219710ec7a72f460ff94bf424dd3ef0e52817',
+258 silly resolved     _from: 'inpath@~1.0.2',
+258 silly resolved     _resolved: 'https://registry.npmjs.org/inpath/-/inpath-1.0.2.tgz',
+258 silly resolved     bugs: { url: 'https://github.com/calmh/node-inpath/issues' } } ]
+259 info install read@1.0.5 into /Users/vlad/node_modules/sudo
+260 info install pidof@1.0.2 into /Users/vlad/node_modules/sudo
+261 info install inpath@1.0.2 into /Users/vlad/node_modules/sudo
+262 info installOne read@1.0.5
+263 info installOne pidof@1.0.2
+264 info installOne inpath@1.0.2
+265 info /Users/vlad/node_modules/sudo/node_modules/read unbuild
+266 info /Users/vlad/node_modules/sudo/node_modules/pidof unbuild
+267 info /Users/vlad/node_modules/sudo/node_modules/inpath unbuild
+268 verbose tar unpack /Users/vlad/.npm/read/1.0.5/package.tgz
+269 silly lockFile 818f4242-e-modules-sudo-node-modules-read tar:///Users/vlad/node_modules/sudo/node_modules/read
+270 verbose lock tar:///Users/vlad/node_modules/sudo/node_modules/read /Users/vlad/.npm/818f4242-e-modules-sudo-node-modules-read.lock
+271 silly lockFile 533da860--vlad-npm-read-1-0-5-package-tgz tar:///Users/vlad/.npm/read/1.0.5/package.tgz
+272 verbose lock tar:///Users/vlad/.npm/read/1.0.5/package.tgz /Users/vlad/.npm/533da860--vlad-npm-read-1-0-5-package-tgz.lock
+273 verbose tar unpack /Users/vlad/.npm/pidof/1.0.2/package.tgz
+274 silly lockFile 3ae706e6--modules-sudo-node-modules-pidof tar:///Users/vlad/node_modules/sudo/node_modules/pidof
+275 verbose lock tar:///Users/vlad/node_modules/sudo/node_modules/pidof /Users/vlad/.npm/3ae706e6--modules-sudo-node-modules-pidof.lock
+276 silly lockFile 1ae96a87-vlad-npm-pidof-1-0-2-package-tgz tar:///Users/vlad/.npm/pidof/1.0.2/package.tgz
+277 verbose lock tar:///Users/vlad/.npm/pidof/1.0.2/package.tgz /Users/vlad/.npm/1ae96a87-vlad-npm-pidof-1-0-2-package-tgz.lock
+278 verbose tar unpack /Users/vlad/.npm/inpath/1.0.2/package.tgz
+279 silly lockFile e6d62ac8-modules-sudo-node-modules-inpath tar:///Users/vlad/node_modules/sudo/node_modules/inpath
+280 verbose lock tar:///Users/vlad/node_modules/sudo/node_modules/inpath /Users/vlad/.npm/e6d62ac8-modules-sudo-node-modules-inpath.lock
+281 silly lockFile 2946686d-lad-npm-inpath-1-0-2-package-tgz tar:///Users/vlad/.npm/inpath/1.0.2/package.tgz
+282 verbose lock tar:///Users/vlad/.npm/inpath/1.0.2/package.tgz /Users/vlad/.npm/2946686d-lad-npm-inpath-1-0-2-package-tgz.lock
+283 silly gunzTarPerm modes [ '755', '644' ]
+284 silly gunzTarPerm modes [ '755', '644' ]
+285 silly gunzTarPerm modes [ '755', '644' ]
+286 silly gunzTarPerm extractEntry package.json
+287 silly gunzTarPerm extractEntry package.json
+288 silly gunzTarPerm extractEntry package.json
+289 silly gunzTarPerm extractEntry .npmignore
+290 silly gunzTarPerm extractEntry README.md
+291 silly gunzTarPerm extractEntry .npmignore
+292 silly gunzTarPerm extractEntry README.md
+293 silly gunzTarPerm extractEntry .npmignore
+294 silly gunzTarPerm extractEntry README.md
+295 silly gunzTarPerm extractEntry LICENCE
+296 silly gunzTarPerm extractEntry rs.js
+297 silly gunzTarPerm extractEntry LICENSE
+298 silly gunzTarPerm extractEntry example.js
+299 silly gunzTarPerm extractEntry LICENSE
+300 silly gunzTarPerm extractEntry example.js
+301 silly gunzTarPerm extractEntry example/example.js
+302 silly gunzTarPerm extractEntry lib/read.js
+303 silly gunzTarPerm extractEntry .travis.yml
+304 silly gunzTarPerm extractEntry lib/inpath.js
+305 silly gunzTarPerm extractEntry .travis.yml
+306 silly gunzTarPerm extractEntry lib/pidof.js
+307 silly gunzTarPerm extractEntry test/inpath.js
+308 silly gunzTarPerm extractEntry test/pidof.js
+309 silly gunzTarPerm extractEntry test/basic.js
+310 silly gunzTarPerm extractEntry test/defaults.js
+311 silly gunzTarPerm extractEntry test/many.js
+312 silly lockFile e6d62ac8-modules-sudo-node-modules-inpath tar:///Users/vlad/node_modules/sudo/node_modules/inpath
+313 silly lockFile e6d62ac8-modules-sudo-node-modules-inpath tar:///Users/vlad/node_modules/sudo/node_modules/inpath
+314 silly lockFile 2946686d-lad-npm-inpath-1-0-2-package-tgz tar:///Users/vlad/.npm/inpath/1.0.2/package.tgz
+315 silly lockFile 2946686d-lad-npm-inpath-1-0-2-package-tgz tar:///Users/vlad/.npm/inpath/1.0.2/package.tgz
+316 silly lockFile 3ae706e6--modules-sudo-node-modules-pidof tar:///Users/vlad/node_modules/sudo/node_modules/pidof
+317 silly lockFile 3ae706e6--modules-sudo-node-modules-pidof tar:///Users/vlad/node_modules/sudo/node_modules/pidof
+318 silly lockFile 1ae96a87-vlad-npm-pidof-1-0-2-package-tgz tar:///Users/vlad/.npm/pidof/1.0.2/package.tgz
+319 silly lockFile 1ae96a87-vlad-npm-pidof-1-0-2-package-tgz tar:///Users/vlad/.npm/pidof/1.0.2/package.tgz
+320 info preinstall inpath@1.0.2
+321 info preinstall pidof@1.0.2
+322 verbose readDependencies using package.json deps
+323 verbose readDependencies using package.json deps
+324 silly resolved []
+325 verbose about to build /Users/vlad/node_modules/sudo/node_modules/inpath
+326 info build /Users/vlad/node_modules/sudo/node_modules/inpath
+327 verbose linkStuff [ false,
+327 verbose linkStuff   false,
+327 verbose linkStuff   false,
+327 verbose linkStuff   '/Users/vlad/node_modules/sudo/node_modules' ]
+328 info linkStuff inpath@1.0.2
+329 verbose readDependencies using package.json deps
+330 verbose linkBins inpath@1.0.2
+331 verbose linkMans inpath@1.0.2
+332 verbose rebuildBundles inpath@1.0.2
+333 verbose readDependencies using package.json deps
+334 silly resolved []
+335 verbose about to build /Users/vlad/node_modules/sudo/node_modules/pidof
+336 info build /Users/vlad/node_modules/sudo/node_modules/pidof
+337 verbose linkStuff [ false,
+337 verbose linkStuff   false,
+337 verbose linkStuff   false,
+337 verbose linkStuff   '/Users/vlad/node_modules/sudo/node_modules' ]
+338 info linkStuff pidof@1.0.2
+339 info install inpath@1.0.2
+340 verbose linkBins pidof@1.0.2
+341 verbose linkMans pidof@1.0.2
+342 verbose rebuildBundles pidof@1.0.2
+343 info postinstall inpath@1.0.2
+344 info install pidof@1.0.2
+345 info postinstall pidof@1.0.2
+346 silly lockFile 818f4242-e-modules-sudo-node-modules-read tar:///Users/vlad/node_modules/sudo/node_modules/read
+347 silly lockFile 818f4242-e-modules-sudo-node-modules-read tar:///Users/vlad/node_modules/sudo/node_modules/read
+348 silly lockFile 533da860--vlad-npm-read-1-0-5-package-tgz tar:///Users/vlad/.npm/read/1.0.5/package.tgz
+349 silly lockFile 533da860--vlad-npm-read-1-0-5-package-tgz tar:///Users/vlad/.npm/read/1.0.5/package.tgz
+350 info preinstall read@1.0.5
+351 verbose readDependencies using package.json deps
+352 verbose readDependencies using package.json deps
+353 verbose cache add [ 'mute-stream@~0.0.4', null ]
+354 verbose cache add name=undefined spec="mute-stream@~0.0.4" args=["mute-stream@~0.0.4",null]
+355 verbose parsed url { protocol: null,
+355 verbose parsed url   slashes: null,
+355 verbose parsed url   auth: null,
+355 verbose parsed url   host: null,
+355 verbose parsed url   port: null,
+355 verbose parsed url   hostname: null,
+355 verbose parsed url   hash: null,
+355 verbose parsed url   search: null,
+355 verbose parsed url   query: null,
+355 verbose parsed url   pathname: 'mute-stream@~0.0.4',
+355 verbose parsed url   path: 'mute-stream@~0.0.4',
+355 verbose parsed url   href: 'mute-stream@~0.0.4' }
+356 verbose cache add name="mute-stream" spec="~0.0.4" args=["mute-stream","~0.0.4"]
+357 verbose parsed url { protocol: null,
+357 verbose parsed url   slashes: null,
+357 verbose parsed url   auth: null,
+357 verbose parsed url   host: null,
+357 verbose parsed url   port: null,
+357 verbose parsed url   hostname: null,
+357 verbose parsed url   hash: null,
+357 verbose parsed url   search: null,
+357 verbose parsed url   query: null,
+357 verbose parsed url   pathname: '~0.0.4',
+357 verbose parsed url   path: '~0.0.4',
+357 verbose parsed url   href: '~0.0.4' }
+358 verbose addNamed [ 'mute-stream', '~0.0.4' ]
+359 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+360 silly lockFile 0cb27cfc-mute-stream-0-0-4 mute-stream@~0.0.4
+361 verbose lock mute-stream@~0.0.4 /Users/vlad/.npm/0cb27cfc-mute-stream-0-0-4.lock
+362 silly addNameRange { name: 'mute-stream',
+362 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+362 silly addNameRange   hasData: false }
+363 verbose url raw mute-stream
+364 verbose url resolving [ 'https://registry.npmjs.org/', './mute-stream' ]
+365 verbose url resolved https://registry.npmjs.org/mute-stream
+366 info trying registry request attempt 1 at 10:54:17
+367 verbose etag "7A8AA4Z9NK21ED6CFE36L35Q3"
+368 http GET https://registry.npmjs.org/mute-stream
+369 http 304 https://registry.npmjs.org/mime
+370 silly registry.get cb [ 304,
+370 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:15 GMT',
+370 silly registry.get     server: 'Apache',
+370 silly registry.get     via: '1.1 varnish',
+370 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:53:23 GMT',
+370 silly registry.get     'cache-control': 'max-age=60',
+370 silly registry.get     etag: '"8MVGFBSD9OQ39ZG21QCUJEQDE"',
+370 silly registry.get     'x-served-by': 'cache-iad2134-IAD',
+370 silly registry.get     'x-cache': 'HIT',
+370 silly registry.get     'x-cache-hits': '7',
+370 silly registry.get     'x-timer': 'S1408038855.079241,VS0,VE0',
+370 silly registry.get     vary: 'Accept',
+370 silly registry.get     'content-length': '0',
+370 silly registry.get     'keep-alive': 'timeout=10, max=50',
+370 silly registry.get     connection: 'Keep-Alive' } ]
+371 verbose etag mime from cache
+372 silly lockFile cc89fbb3-ry-npmjs-org-mime-mime-1-2-9-tgz https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+373 verbose lock https://registry.npmjs.org/mime/-/mime-1.2.9.tgz /Users/vlad/.npm/cc89fbb3-ry-npmjs-org-mime-mime-1-2-9-tgz.lock
+374 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime/-/mime-1.2.9.tgz',
+374 verbose addRemoteTarball   '009cd40867bd35de521b3b966f04e2f8d4d13d09' ]
+375 info retry fetch attempt 1 at 10:54:17
+376 verbose fetch to= /var/folders/sm/g_hzx1wn1rx9htplswps1pyc0000gn/T/npm-20000-LiBFFQ64/registry.npmjs.org/mime/-/mime-1.2.9.tgz
+377 http GET https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+378 http 304 https://registry.npmjs.org/mute-stream
+379 silly registry.get cb [ 304,
+379 silly registry.get   { date: 'Thu, 14 Aug 2014 17:54:15 GMT',
+379 silly registry.get     server: 'Apache',
+379 silly registry.get     via: '1.1 varnish',
+379 silly registry.get     'last-modified': 'Thu, 14 Aug 2014 17:54:15 GMT',
+379 silly registry.get     'cache-control': 'max-age=60',
+379 silly registry.get     etag: '"7A8AA4Z9NK21ED6CFE36L35Q3"',
+379 silly registry.get     'x-served-by': 'cache-iad2120-IAD',
+379 silly registry.get     'x-cache': 'HIT',
+379 silly registry.get     'x-cache-hits': '1',
+379 silly registry.get     'x-timer': 'S1408038855.341031,VS0,VE0',
+379 silly registry.get     vary: 'Accept',
+379 silly registry.get     'content-length': '0',
+379 silly registry.get     'keep-alive': 'timeout=10, max=50',
+379 silly registry.get     connection: 'Keep-Alive' } ]
+380 verbose etag mute-stream from cache
+381 silly addNameRange number 2 { name: 'mute-stream',
+381 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+381 silly addNameRange   hasData: true }
+382 silly addNameRange versions [ 'mute-stream', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4' ] ]
+383 verbose addNamed [ 'mute-stream', '0.0.4' ]
+384 verbose addNamed [ '0.0.4', '0.0.4' ]
+385 silly lockFile 71666a8b-mute-stream-0-0-4 mute-stream@0.0.4
+386 verbose lock mute-stream@0.0.4 /Users/vlad/.npm/71666a8b-mute-stream-0-0-4.lock
+387 silly lockFile 71666a8b-mute-stream-0-0-4 mute-stream@0.0.4
+388 silly lockFile 71666a8b-mute-stream-0-0-4 mute-stream@0.0.4
+389 silly lockFile 0cb27cfc-mute-stream-0-0-4 mute-stream@~0.0.4
+390 silly lockFile 0cb27cfc-mute-stream-0-0-4 mute-stream@~0.0.4
+391 silly resolved [ { name: 'mute-stream',
+391 silly resolved     version: '0.0.4',
+391 silly resolved     main: 'mute.js',
+391 silly resolved     directories: { test: 'test' },
+391 silly resolved     devDependencies: { tap: '~0.2.5' },
+391 silly resolved     scripts: { test: 'tap test/*.js' },
+391 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/mute-stream' },
+391 silly resolved     keywords: [ 'mute', 'stream', 'pipe' ],
+391 silly resolved     author:
+391 silly resolved      { name: 'Isaac Z. Schlueter',
+391 silly resolved        email: 'i@izs.me',
+391 silly resolved        url: 'http://blog.izs.me/' },
+391 silly resolved     license: 'BSD',
+391 silly resolved     description: 'Bytes go in, but they don\'t come out (when muted).',
+391 silly resolved     readme: '# mute-stream\n\nBytes go in, but they don\'t come out (when muted).\n\nThis is a basic pass-through stream, but when muted, the bytes are\nsilently dropped, rather than being passed through.\n\n## Usage\n\n```javascript\nvar MuteStream = require(\'mute-stream\')\n\nvar ms = new MuteStream(options)\n\nms.pipe(process.stdout)\nms.write(\'foo\') // writes \'foo\' to stdout\nms.mute()\nms.write(\'bar\') // does not write \'bar\'\nms.unmute()\nms.write(\'baz\') // writes \'baz\' to stdout\n\n// can also be used to mute incoming data\nvar ms = new MuteStream\ninput.pipe(ms)\n\nms.on(\'data\', function (c) {\n  console.log(\'data: \' + c)\n})\n\ninput.emit(\'data\', \'foo\') // logs \'foo\'\nms.mute()\ninput.emit(\'data\', \'bar\') // does not log \'bar\'\nms.unmute()\ninput.emit(\'data\', \'baz\') // logs \'baz\'\n```\n\n## Options\n\nAll options are optional.\n\n* `replace` Set to a string to replace each character with the\n  specified string when muted.  (So you can show `****` instead of the\n  password, for example.)\n\n* `prompt` If you are using a replacement char, and also using a\n  prompt with a readline stream (as for a `Password: *****` input),\n  then specify what the prompt is so that backspace will work\n  properly.  Otherwise, pressing backspace will overwrite the prompt\n  with the replacement character, which is weird.\n\n## ms.mute()\n\nSet `muted` to `true`.  Turns `.write()` into a no-op.\n\n## ms.unmute()\n\nSet `muted` to `false`\n\n## ms.isTTY\n\nTrue if the pipe destination is a TTY, or if the incoming pipe source is\na TTY.\n\n## Other stream methods...\n\nThe other standard readable and writable stream methods are all\navailable.  The MuteStream object acts as a facade to its pipe source\nand destination.\n',
+391 silly resolved     readmeFilename: 'README.md',
+391 silly resolved     bugs: { url: 'https://github.com/isaacs/mute-stream/issues' },
+391 silly resolved     _id: 'mute-stream@0.0.4',
+391 silly resolved     dist:
+391 silly resolved      { shasum: 'a9219960a6d5d5d046597aee51252c6655f7177e',
+391 silly resolved        tarball: 'http://registry.npmjs.org/mute-stream/-/mute-stream-0.0.4.tgz' },
+391 silly resolved     _from: 'mute-stream@~0.0.4',
+391 silly resolved     _npmVersion: '1.3.4',
+391 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+391 silly resolved     maintainers: [ [Object] ],
+391 silly resolved     _shasum: 'a9219960a6d5d5d046597aee51252c6655f7177e',
+391 silly resolved     _resolved: 'https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.4.tgz',
+391 silly resolved     homepage: 'https://github.com/isaacs/mute-stream' } ]
+392 info install mute-stream@0.0.4 into /Users/vlad/node_modules/sudo/node_modules/read
+393 info installOne mute-stream@0.0.4
+394 info /Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream unbuild
+395 verbose tar unpack /Users/vlad/.npm/mute-stream/0.0.4/package.tgz
+396 silly lockFile 50ad0845-es-read-node-modules-mute-stream tar:///Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream
+397 verbose lock tar:///Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream /Users/vlad/.npm/50ad0845-es-read-node-modules-mute-stream.lock
+398 silly lockFile 48dfcafa-pm-mute-stream-0-0-4-package-tgz tar:///Users/vlad/.npm/mute-stream/0.0.4/package.tgz
+399 verbose lock tar:///Users/vlad/.npm/mute-stream/0.0.4/package.tgz /Users/vlad/.npm/48dfcafa-pm-mute-stream-0-0-4-package-tgz.lock
+400 silly gunzTarPerm modes [ '755', '644' ]
+401 silly gunzTarPerm extractEntry package.json
+402 silly gunzTarPerm extractEntry README.md
+403 silly gunzTarPerm extractEntry LICENSE
+404 silly gunzTarPerm extractEntry mute.js
+405 silly gunzTarPerm extractEntry test/basic.js
+406 silly lockFile 50ad0845-es-read-node-modules-mute-stream tar:///Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream
+407 silly lockFile 50ad0845-es-read-node-modules-mute-stream tar:///Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream
+408 silly lockFile 48dfcafa-pm-mute-stream-0-0-4-package-tgz tar:///Users/vlad/.npm/mute-stream/0.0.4/package.tgz
+409 silly lockFile 48dfcafa-pm-mute-stream-0-0-4-package-tgz tar:///Users/vlad/.npm/mute-stream/0.0.4/package.tgz
+410 info preinstall mute-stream@0.0.4
+411 verbose readDependencies using package.json deps
+412 verbose readDependencies using package.json deps
+413 silly resolved []
+414 verbose about to build /Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream
+415 info build /Users/vlad/node_modules/sudo/node_modules/read/node_modules/mute-stream
+416 verbose linkStuff [ false,
+416 verbose linkStuff   false,
+416 verbose linkStuff   false,
+416 verbose linkStuff   '/Users/vlad/node_modules/sudo/node_modules/read/node_modules' ]
+417 info linkStuff mute-stream@0.0.4
+418 verbose linkBins mute-stream@0.0.4
+419 verbose linkMans mute-stream@0.0.4
+420 verbose rebuildBundles mute-stream@0.0.4
+421 info install mute-stream@0.0.4
+422 info postinstall mute-stream@0.0.4
+423 verbose about to build /Users/vlad/node_modules/sudo/node_modules/read
+424 info build /Users/vlad/node_modules/sudo/node_modules/read
+425 verbose linkStuff [ false,
+425 verbose linkStuff   false,
+425 verbose linkStuff   false,
+425 verbose linkStuff   '/Users/vlad/node_modules/sudo/node_modules' ]
+426 info linkStuff read@1.0.5
+427 verbose linkBins read@1.0.5
+428 verbose linkMans read@1.0.5
+429 verbose rebuildBundles read@1.0.5
+430 verbose rebuildBundles [ 'mute-stream' ]
+431 info install read@1.0.5
+432 info postinstall read@1.0.5
+433 verbose about to build /Users/vlad/node_modules/sudo
+434 info build /Users/vlad/node_modules/sudo
+435 verbose linkStuff [ false, false, false, '/Users/vlad/node_modules' ]
+436 info linkStuff sudo@1.0.3
+437 verbose linkBins sudo@1.0.3
+438 verbose linkMans sudo@1.0.3
+439 verbose rebuildBundles sudo@1.0.3
+440 verbose rebuildBundles [ 'inpath', 'pidof', 'read' ]
+441 info install sudo@1.0.3
+442 info postinstall sudo@1.0.3
+443 http 200 https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+444 silly lockFile cc89fbb3-ry-npmjs-org-mime-mime-1-2-9-tgz https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+445 silly lockFile cc89fbb3-ry-npmjs-org-mime-mime-1-2-9-tgz https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+446 silly lockFile 24648bbc-mime-1-2-9 mime@1.2.9
+447 silly lockFile 24648bbc-mime-1-2-9 mime@1.2.9
+448 verbose about to build /Users/vlad/node_modules/git
+449 info /Users/vlad/node_modules/git unbuild
+450 info preuninstall git@0.1.5
+451 info uninstall git@0.1.5
+452 verbose true,/Users/vlad/node_modules,/Users/vlad/node_modules unbuild git@0.1.5
+453 info postuninstall git@0.1.5
+454 error Error: EACCES, mkdir '/Users/vlad/.npm/mime/1.2.9'
+454 error  { [Error: EACCES, mkdir '/Users/vlad/.npm/mime/1.2.9']
+454 error   errno: 3,
+454 error   code: 'EACCES',
+454 error   path: '/Users/vlad/.npm/mime/1.2.9',
+454 error   parent: 'git' }
+455 error Please try running this command again as root/Administrator.
+456 error System Darwin 12.5.0
+457 error command "node" "/usr/local/bin/npm" "install" "sudo" "git"
+458 error cwd /Users/vlad/Desktop/Projects/Shapez
+459 error node -v v0.10.29
+460 error npm -v 1.4.14
+461 error path /Users/vlad/.npm/mime/1.2.9
+462 error code EACCES
+463 error errno 3
+464 error stack Error: EACCES, mkdir '/Users/vlad/.npm/mime/1.2.9'
+465 verbose exit [ 3, true ]
