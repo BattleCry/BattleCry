@@ -1,3 +1,26 @@
 body {
-	background-color: black;
+	background-color: #E9E9E9;
+	overflow: hidden;
+}
+
+.block {
+	position: absolute;
+}
+
+.stock-chart-item:hover {
+	background-color: #CDCDCD;
+	cursor: pointer;
+}
+
+.stock-chart-item {
+	position: absolute;
+	background-color: #e3e3e3;
+}
+
+.all-stocks {
+	position: absolute;
+	top: 0px;
+	bottom: 0px; 
+	left: 301px;
+	right: 350px; 
 }
