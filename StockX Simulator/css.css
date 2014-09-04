@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 body {
 	background-color: black;
-=======
-#top {
+}
+
+.top {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
->>>>>>> FETCH_HEAD
 }
