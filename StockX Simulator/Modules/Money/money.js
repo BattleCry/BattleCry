@@ -5,7 +5,7 @@ $(function() {
 var money = {
 	init : function() {
 		$.ajax({ 
-	        url: 'index.html', 
+	        url: 'Modules/Money/index.html', 
 	        success: function (data, status, xhr) { 
 	        	$('#body').append(data);
 	        }
