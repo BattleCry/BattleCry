@@ -7,6 +7,12 @@ var icon = {
 	currentLink : '#main',
 	init : function() {
 		$('#create').toggle();
+		$.ajax({ 
+	        url: '2ndIndex.html', 
+	        success: function (data, status, xhr) { 
+	        	$('#body').append(data);
+	        }
+	    });
 	},
 
 	render : function() {

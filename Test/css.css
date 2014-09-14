@@ -1,0 +1,20 @@
+body {
+	overflow: hidden;
+}
+
+.main {
+	background-color: black;
+}
+
+.main-dragger {
+	z-index: 2;
+}
+
+canvas {
+	background-color: black;
+	z-index: -1;
+}
+
+.block {
+	position: absolute;
+}
