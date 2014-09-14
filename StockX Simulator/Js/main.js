@@ -5,11 +5,11 @@ allStocks.recieveStocks();
 });
 
 var stockX = {
-    money         : 1,
+    money         : 100,
     pasMoney      : 1,
     moneyChange   : true,
 
-    allStocks     : ['LNKD', 'ORCL', 'MSFT', 'YHOO'], //
+    allStocks     : ['LNKD', 'ORCL', 'MSFT', 'YHOO'],
     allStocksInfo : [],
 
 
